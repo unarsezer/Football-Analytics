@@ -6,7 +6,6 @@ library(ggplot2)
 library(tidyverse)
 library(geomtextpath)
 library(extrafont)
-library(readxl)
 ```
 ## Functions
 We have two functions to create the circle shape and add the league logo.
