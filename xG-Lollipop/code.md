@@ -1,5 +1,5 @@
 # How to make xG Lollipop Chart with GGPLOT2
-There are 2 parts of the code that you have to manually change according to the match. These are team logos and colors.
+There are 3 parts of the code that you have to manually change according to the match. These are match id, team logos and colors.
 ## Packages & Functions
 ```r
 library(tidyverse)
