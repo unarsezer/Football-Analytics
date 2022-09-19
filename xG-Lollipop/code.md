@@ -193,10 +193,10 @@ p <- ggplot() +
   geom_segment(aes(x = 45.5+max_first_half, xend = 45.5+max_first_half, y = 0.8, yend = -0.8), color = "#34363b", size = 1) +
   
   # X Axis Label
-  geom_text(data = data.frame(x = c(seq(5, 45, by = 5), seq(46+max_first_half+5, 46+max_first_half+45, by = 5)), 
+  geom_text(data = data.frame(x = c(seq(5, 45, by = 5), seq(45+max_first_half+5, 45+max_first_half+45, by = 5)), 
                               y = 0.67, l = seq(5, 90, by = 5)), 
             aes(x, y, label = l), color = "#68686A", family = "Teko", fontface = 2, alpha = 0.9, size = 6) +
-  geom_text(data = data.frame(x = c(seq(5, 45, by = 5), seq(46+max_first_half+5, 46+max_first_half+45, by = 5)), 
+  geom_text(data = data.frame(x = c(seq(5, 45, by = 5), seq(45+max_first_half+5, 45+max_first_half+45, by = 5)), 
                               y = -0.67, l = seq(5, 90, by = 5)), 
             aes(x, y, label = l), color = "#68686A", family = "Teko", fontface = 2, alpha = 0.9, size = 6) +
   
