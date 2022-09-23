@@ -5,6 +5,8 @@ I share the codes of some graphs I have made so far. Of course they're just abou
 ![venn_diagram](https://user-images.githubusercontent.com/65786664/189120607-07c49f72-120d-4b88-96f0-d19eaf8ddeee.png)
 #### xG Lollipop Chart
 ![xG_lollipop_original](https://user-images.githubusercontent.com/65786664/190358175-cc6d261e-4308-4203-8aaa-59a4eb278757.png)
+#### Bar Chart with SmarterScout data
+![smarter_profile_salah](https://user-images.githubusercontent.com/65786664/191925973-c821b413-9f69-44a0-8cb8-43f30c455118.png)
 
 
 
