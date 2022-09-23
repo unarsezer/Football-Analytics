@@ -1,0 +1,14 @@
+"player","part","stats","numbers"
+"Mohamed Salah","possession","link_up_rating",73
+"Mohamed Salah","possession","progressive_pass",32
+"Mohamed Salah","possession","ball_retention",51
+"Mohamed Salah","possession","carry_dribble_rating",65
+"Mohamed Salah","attacking","receive_in_box",99
+"Mohamed Salah","attacking","shoot",99
+"Mohamed Salah","attacking","rate_involvement_in_moves_ending_in_a_shot",48
+"Mohamed Salah","attacking","attacking_output",92
+"Mohamed Salah","defensive","disrupt_opp_moves",9
+"Mohamed Salah","defensive","recover",9
+"Mohamed Salah","defensive","aerial",37
+"Mohamed Salah","defensive","defending_quantity",58
+"Mohamed Salah","defensive","defending_quality",82
