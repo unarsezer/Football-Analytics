@@ -16,7 +16,7 @@ I attached the data I will use in the data folder.
 logo <- image_read("https://smarterscout.com/assets/images/smarterscout-client.png")
 logo <- rasterGrob(logo, interpolate=TRUE)
 
-df <- read.csv("venn_df.csv", stringsAsFactors = F)
+df <- read.csv("df.csv", stringsAsFactors = F)
 str(df)
 ```
 ![df_str](https://user-images.githubusercontent.com/65786664/191927104-27c85633-e3ce-4c69-bbdc-fe6ca835f405.JPG)
@@ -40,7 +40,7 @@ df <- df %>%
   # For numbers less than 2 to appear properly on the chart
   mutate(numbers2 = ifelse(numbers < 2, 2, numbers)) 
   
-  df$stats <- factor(df$stats, levels = c("Defending\nquality*", "Defending\nquantity*", "Aerial duels", "Ball\nrecoveries", 
+df$stats <- factor(df$stats, levels = c("Defending\nquality*", "Defending\nquantity*", "Aerial duels", "Ball\nrecoveries", 
                                         "Disrupting\nopp. moves", "Attacking\noutput*", "% involvement\nin moves ending in a shot",
                                         "Shot\nvolume", "Receptions in\n opp. box", "Ball retention\nability*", "Progressive passing",
                                         "Link-up passing", "Carry & dribble\nvolume"))
