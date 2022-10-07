@@ -7,6 +7,8 @@ I share the codes of some graphs I have made so far. Of course they're just abou
 ![xG_lollipop_original](https://user-images.githubusercontent.com/65786664/190358175-cc6d261e-4308-4203-8aaa-59a4eb278757.png)
 #### Bar Chart with SmarterScout data
 ![smarter_profile_salah](https://user-images.githubusercontent.com/65786664/191925973-c821b413-9f69-44a0-8cb8-43f30c455118.png)
+#### xG and xGA Plot with FotMob data
+![main_graph](https://user-images.githubusercontent.com/65786664/194590682-2b48134e-642d-4fb1-b45e-d044af1277cf.png)
 
 
 
