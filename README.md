@@ -9,6 +9,8 @@ I share the codes of some graphs I have made so far. Of course they're just abou
 ![smarter_profile_salah](https://user-images.githubusercontent.com/65786664/191925973-c821b413-9f69-44a0-8cb8-43f30c455118.png)
 #### xG and xGA Plot with FotMob data
 ![main_graph](https://user-images.githubusercontent.com/65786664/194590682-2b48134e-642d-4fb1-b45e-d044af1277cf.png)
+#### Heat Map with 2nd Dimention
+![heatmap_trial](https://user-images.githubusercontent.com/65786664/203530079-7b451cfd-4ba3-4090-90ab-2c702fdeb399.png)
 
 
 
