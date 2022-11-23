@@ -1,1 +1,1 @@
-You can find the logos and icons I used to create the graph here
+You can find the data and image I used to make the graph here
