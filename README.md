@@ -11,6 +11,9 @@ I share the codes of some graphs I have made so far. Of course they're just abou
 ![main_graph](https://user-images.githubusercontent.com/65786664/194590682-2b48134e-642d-4fb1-b45e-d044af1277cf.png)
 #### Two Dimentional Heat Map
 ![heatmap_trial](https://user-images.githubusercontent.com/65786664/203530079-7b451cfd-4ba3-4090-90ab-2c702fdeb399.png)
+#### PassSolar
+![passSolar](https://user-images.githubusercontent.com/65786664/206483040-ef5fafb2-53b9-4904-b96a-01499f683c30.png)
+
 
 
 
