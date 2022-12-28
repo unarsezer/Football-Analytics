@@ -23,11 +23,17 @@ top10 <- top10 %>% filter(table_type == "all")
 top10 <- top10$table_short_name
 
 # Preparing Graph Data
-df <- fotmob_get_league_matches(country = "ENG", league_name = "Premier League")
+df <- fotmob_get_league_matches(country = "ENG", league_name = "Premier League") %>%
+  dplyr::select(match_id = id, home, away, status) %>%
+  tidyr::unnest_wider(c(home, away, status), names_sep = "_")
+  
 df <- df %>% 
-  filter(not_started == F) %>%
-  select(match_id = id, home, away) %>%
-  unnest_wider(c(home, away), names_sep = "_") %>%
+  filter(status_started == T) %>%
+  select(match_id, home_id, home_shortName, away_id, away_shortName, status_scoreStr) %>%
+  rename(home_name = home_shortName, away_name = away_shortName) %>%
+  separate(col = status_scoreStr, into = c("home_score", "away_score"), sep = " - ") %>%
+  mutate(home_score = as.integer(home_score),
+         away_score = as.integer(away_score)) %>%
   mutate(home_result = case_when(home_score > away_score ~ "win",
                                  home_score < away_score ~ "loss",
                                  T ~ "draw"),
