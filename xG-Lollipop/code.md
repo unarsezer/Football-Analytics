@@ -177,9 +177,9 @@ p <- ggplot() +
   geom_rect(aes(xmin = -3, xmax = -0.5, ymin = 0, ymax = 0.65), fill = home_color, alpha = 0.15) +
   geom_rect(aes(xmin = -3, xmax = -0.5, ymin = 0, ymax = -0.65), fill = away_color, alpha = 0.15) +
   geom_segment(aes(x = -1.75, xend = -1.75, y = 0.15, yend = 0.40), arrow = arrow(length = unit(0.08, "inches")), 
-               lineend = "round", linejoin = "round", color = home_color, size = 1) +
+               lineend = "round", linejoin = "round", color = home_color, linewidth = 1) +
   geom_segment(aes(x = -1.75, xend = -1.75, y = -0.15, yend = -0.40), arrow = arrow(length = unit(0.08, "inches")), 
-               lineend = "round", linejoin = "round", color = away_color, size = 1) +
+               lineend = "round", linejoin = "round", color = away_color, linewidth = 1) +
   
   geom_rect(aes(xmin = extended_time+0.5, xmax = extended_time+3, ymin = 0.54, ymax = 0.8), fill = home_color, alpha = 0.15) +
   geom_rect(aes(xmin = extended_time+0.5, xmax = extended_time+3, ymin = -0.54, ymax = -0.8), fill = away_color, alpha = 0.15) +
@@ -190,7 +190,7 @@ p <- ggplot() +
   
   # 0 xG Line and Half Time Line
   geom_segment(aes(x = 0, xend = extended_time, y = 0, yend = 0), linetype = 2, color = "#ececec") +
-  geom_segment(aes(x = 45.5+max_first_half, xend = 45.5+max_first_half, y = 0.8, yend = -0.8), color = "#34363b", size = 1) +
+  geom_segment(aes(x = 45.5+max_first_half, xend = 45.5+max_first_half, y = 0.8, yend = -0.8), color = "#34363b", linewidth = 1) +
   
   # X Axis Label
   geom_text(data = data.frame(x = c(seq(5, 45, by = 5), seq(45+max_first_half+5, 45+max_first_half+45, by = 5)), 
@@ -202,7 +202,7 @@ p <- ggplot() +
   
   # Shots with xG (Lollipop Part)
   geom_segment(data = shots %>% filter(isOwnGoal == F), 
-               aes(x = extendedMinute, xend = extendedMinute, y = 0, yend = xG, color = side), size = 1) +
+               aes(x = extendedMinute, xend = extendedMinute, y = 0, yend = xG, color = side), linewidth = 1) +
   geom_point(data = shots %>% filter(isOwnGoal == F),
              aes(x = extendedMinute, y = xG, color = side), shape = 21, stroke = 1, fill = "#34363b", size = 6) +
   
@@ -287,7 +287,7 @@ p <- ggplot() +
         panel.background = element_rect(fill = "#34363b", color = "#34363b"),
         panel.grid.minor = element_blank(),
         panel.grid.major.x = element_blank(),
-        panel.grid.major.y = element_line(color = "#4F5053", size = 0.25),
+        panel.grid.major.y = element_line(color = "#4F5053", linewidth = 0.25),
         axis.title = element_blank(),
         axis.text.x = element_blank(),
         axis.text.y = element_blank(),
