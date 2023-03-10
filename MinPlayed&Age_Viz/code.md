@@ -1,4 +1,4 @@
-# How to make a Minutes Played & Age Viz with GGPLOT2
+# How to make a Minutes Played & Age Visual with GGPLOT2
 
 ## Packages
 ```r
