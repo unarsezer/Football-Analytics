@@ -13,7 +13,8 @@ I share the codes of **some graphs** I have made so far and the **machine learni
 ![heatmap_trial](https://user-images.githubusercontent.com/65786664/203530079-7b451cfd-4ba3-4090-90ab-2c702fdeb399.png)
 #### PassSolar
 ![passSolar](https://user-images.githubusercontent.com/65786664/206483040-ef5fafb2-53b9-4904-b96a-01499f683c30.png)
-
+#### Statsbomb Type Distribution Chart
+![denee](https://user-images.githubusercontent.com/65786664/226651401-1b5d88b3-424a-44ac-881e-3c4c28d843bf.png)
 
 
 
