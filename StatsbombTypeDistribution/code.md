@@ -196,7 +196,7 @@ stylish_dist_viz <- function(data, selected_column, selected_id, variables, vari
 ## Function's guide
 ### Parameters
 #### **data**: The data set you want to visualize
-#### variables: What metrics will you use for visualization? Their ranking is important. The first one you write appears at the bottom. Example, c("xG", "xA", "key_pass")
+#### variables: What metrics will you use for visualization? Their order is important. The first one you write appears at the bottom. Example, c("xG", "xA", "key_pass")
 #### variable_labels: What name do you want the metrics you write in the "variable" parameter to appear on the chart? You must use the same order as in the "variable" parameter! Example, c("Expected Goal", "Expected Assist", "Key Pass")
 #### selected_column: While preparing the data, we created a variable with "unique" names. Here you write the name of that column. Example, c("id")
 #### selected_id: Enter the name of the player whose graph we want to see in the column of "unique" names. Example, c("2023_Manchester City_Erling Haaland")
