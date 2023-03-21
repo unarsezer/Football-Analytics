@@ -131,22 +131,19 @@ stylish_dist_viz <- function(data, selected_column, selected_id, variables, vari
     }
   }
   
-  #
   border_df <- last_df %>% group_by(column_name) %>%
     summarise(x = min(x[isColorful == 0]), min_y = min(y), max_y = max(y))
   
-  #
   legend_df <- data.frame(x = seq(0, 1, length = 300), y = -0.8, 
                           color = colorRampPalette(c(color_0quantile, color_25quantile, color_50quantile, color_75quantile, color_100quantile))(300)) 
   
-  #
   labels_df <- last_df %>% 
     group_by(column_name) %>%
     summarise(y = min(y), min_value = min(min_value), max_value = max(max_value)) %>%
     ungroup()
   
   
-  # 
+  # Create dataset to add player's metric and percentile values
   player_df <- df %>%
     pivot_longer(-selected_column, names_to = "column_name", values_to = "metric") %>%
     group_by(column_name) %>%
